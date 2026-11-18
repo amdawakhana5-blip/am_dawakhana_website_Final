@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <title>آرڈر موصول ہو گیا ہے! - AM Dawakhana</title>
+  
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="shortcut icon" href="logo.png" />
+
+  <!-- Google Fonts: Premium Urdu Fonts & English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Noto+Nastaliq+Urdu:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ============================================================== -->
+  <!-- 🎯 META PIXEL CODE (THANK YOU PAGE PURCHASE EVENT)             -->
+  <!-- NOTE: APNA NAYA PIXEL ID NEECHE "2404080556792684" KI JAGAH LAGAYEN -->
+  <!-- ============================================================== -->
+  <script>
+    const CURRENT_PIXEL_ID = '4731333547192871'; // <-- AM Store Web Pixel ID
+
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', CURRENT_PIXEL_ID);
+    fbq('track', 'PageView');
+    
+    // Automatically fire Purchase event on Thank-You page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const orderVal = urlParams.get('val') ? parseFloat(urlParams.get('val')) : 2299.00;
+    const orderPkg = urlParams.get('pkg') || 'AM Vitality Tablet';
+
+    fbq('track', 'Purchase', {
+      value: orderVal,
+      currency: 'PKR',
+      content_name: orderPkg,
+      content_type: 'product'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=4731333547192871&ev=Purchase&noscript=1"
+      alt="Meta Pixel" />
+  </noscript>
+
+  <style>
+    .urdu-font {
+      font-family: 'Noto Nastaliq Urdu', 'Gulzar', 'Jameel Noori Nastaliq', serif;
+      line-height: 2.6 !important;
+    }
+    .urdu-title {
+      font-family: 'Gulzar', 'Noto Nastaliq Urdu', serif;
+      line-height: 2.1 !important;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-[#FFFDF9] via-[#FAF3E0] to-[#F9EBEA] min-h-screen flex items-center justify-center p-4 text-slate-900 font-sans antialiased">
+
+  <div class="bg-white/95 border-3 border-red-700/70 rounded-3xl p-6 sm:p-10 max-w-lg w-full text-center shadow-2xl space-y-6 my-auto">
+    
+    <!-- Animated Checkmark -->
+    <div class="w-20 h-20 sm:w-24 sm:h-24 bg-emerald-100 border-3 border-emerald-600 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-4xl sm:text-5xl shadow-xl animate-bounce">
+      ✓
+    </div>
+
+    <div class="space-y-1">
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900">
+        Order Placed Successfully!
+      </h1>
+      <h2 class="text-2xl sm:text-3xl font-black text-red-900 urdu-title" dir="rtl">
+        آپ کا آرڈر کامیابی سے موصول ہو گیا ہے!
+      </h2>
+    </div>
+
+    <!-- Order Summary Card -->
+    <div class="bg-[#FAF7EE] p-5 rounded-2xl border-2 border-amber-200 text-xs sm:text-sm text-slate-800 shadow-inner text-left space-y-2">
+      <div class="flex justify-between items-center pb-2 border-b border-amber-200 font-bold">
+        <span class="text-slate-600">Customer Name:</span>
+        <span id="cust-name-display" class="text-red-950 font-black text-sm">Customer</span>
+      </div>
+      <div class="flex justify-between items-center pb-2 border-b border-amber-200 font-bold">
+        <span class="text-slate-600">Selected Package:</span>
+        <span id="cust-pkg-display" class="text-red-950 font-black text-xs sm:text-sm">1 Bottle (20 Tablets)</span>
+      </div>
+      <div class="flex justify-between items-center pb-2 border-b border-amber-200 font-bold">
+        <span class="text-slate-600">Total Bill (COD):</span>
+        <span id="cust-bill-display" class="text-emerald-700 font-black text-base sm:text-lg">Rs. 2,299</span>
+      </div>
+      <div class="flex justify-between items-center font-bold">
+        <span class="text-slate-600">Delivery Status:</span>
+        <span class="bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full text-xs font-black">2-3 Working Days (Free COD)</span>
+      </div>
+    </div>
+
+    <!-- Urdu Note -->
+    <div class="bg-amber-50 border border-amber-300 rounded-2xl p-4 text-right text-xs sm:text-sm text-slate-800 urdu-font" dir="rtl">
+      اے ایم دواخانہ سے خریداری کا شکریہ۔ ہمارے نمائندے کی طرف سے جلد تصدیقی کال کی جائے گی اور آپ کا پارسل <strong class="text-red-800">2 سے 3 دنوں میں</strong> کیش آن ڈیلیوری کے ساتھ پہنچا دیا جائے گا۔
+    </div>
+
+    <!-- WhatsApp & Back to Site Buttons -->
+    <div class="space-y-3 pt-2">
+      <a id="whatsapp-link" href="https://wa.me/923150894064?text=Salam,%20maine%20website%20par%20order%20place%20kiya%20hai."
+         target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black py-3.5 px-4 rounded-xl text-sm w-full transition-all shadow-lg border border-emerald-400 hover:scale-[1.02] active:scale-95">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.612-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>Contact on WhatsApp / واٹس ایپ پر رابطہ کریں</span>
+      </a>
+
+      <a href="index.html"
+         class="inline-block w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-extrabold py-3.5 rounded-xl transition-all text-xs sm:text-sm uppercase tracking-wider">
+        Back to Home / ہوم پیج پر واپس جائیں
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+    // Extract parameters from URL
+    const params = new URLSearchParams(window.location.search);
+    const cName = params.get('name') || 'Customer';
+    const cPkg = params.get('pkg') || '1 Bottle (20 Tablets) - Rs. 2,299';
+    const cVal = params.get('val') || '2299';
+
+    document.getElementById('cust-name-display').textContent = cName;
+    document.getElementById('cust-pkg-display').textContent = cPkg;
+    document.getElementById('cust-bill-display').textContent = 'Rs. ' + Number(cVal).toLocaleString();
+
+    // Update WhatsApp prefilled message
+    const waLink = document.getElementById('whatsapp-link');
+    const waText = encodeURIComponent(`Salam, maine AM Vitality Tablet website par order place kiya hai.\nNaam: ${cName}\nPackage: ${cPkg}\nPrice: Rs. ${cVal}`);
+    waLink.href = `https://wa.me/923150894064?text=${waText}`;
+  </script>
+
+</body>
+</html>

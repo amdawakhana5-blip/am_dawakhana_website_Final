@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="google" content="notranslate" />
+  
+  <title>AM Dawakhana - Herbal Labs | خالص دیسی و یونانی علاج</title>
+  <meta name="description" content="Pure Herbs & Unani Solutions - A.M Vitality Tablet طاقت کا خزانہ، مردانہ قوت کا بااعتماد حل۔ 100% خالص دیسی جڑی بوٹیوں سے تیار کردہ۔" />
+  
+  <!-- Favicons -->
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="shortcut icon" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Google Fonts: Premium Urdu Nastaliq & Gulzar + English Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Noto+Nastaliq+Urdu:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            urdu: ["'Noto Nastaliq Urdu'", "'Gulzar'", "'Jameel Noori Nastaliq'", 'serif'],
+            gulzar: ["'Gulzar'", "'Noto Nastaliq Urdu'", 'serif']
+          },
+          colors: {
+            brand: {
+              red: '#991B1B',
+              darkRed: '#7F1D1D',
+              deepRed: '#450A0A',
+              amber: '#B45309',
+              gold: '#D97706',
+              cream: '#FAF7EE',
+              bgLight: '#FFFDF9'
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'shimmer': 'shimmer 2.2s infinite linear',
+            'float': 'float 3s ease-in-out infinite'
+          },
+          keyframes: {
+            shimmer: {
+              '0%': { transform: 'translateX(-100%)' },
+              '100%': { transform: 'translateX(100%)' }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- ============================================================== -->
+  <!-- 🎯 META PIXEL CODE (AM STORE WEB DATASET)                     -->
+  <!-- ============================================================== -->
+  <script>
+    const CURRENT_PIXEL_ID = '4731333547192871'; // AM Store Web
+
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // Pixel Init & PageView
+    fbq('init', CURRENT_PIXEL_ID);
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=4731333547192871&ev=PageView&noscript=1"
+      alt="Meta Pixel" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    /* Premium Urdu Font Rendering with No Cutoff */
+    .urdu-font {
+      font-family: 'Noto Nastaliq Urdu', 'Gulzar', 'Jameel Noori Nastaliq', serif;
+      line-height: 2.7 !important;
+      letter-spacing: 0.01em;
+    }
+    .urdu-font-tight {
+      font-family: 'Noto Nastaliq Urdu', 'Gulzar', 'Jameel Noori Nastaliq', serif;
+      line-height: 2.2 !important;
+    }
+    .urdu-title {
+      font-family: 'Gulzar', 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
+      line-height: 2.1 !important;
+    }
+
+    /* Marquee ticker that NEVER stops on hover and has plenty of vertical space */
+    @keyframes marqueeRightInfinite {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    .animate-marquee-continuous {
+      display: inline-flex;
+      animation: marqueeRightInfinite 30s linear infinite !important;
+      will-change: transform;
+    }
+    .animate-marquee-continuous:hover {
+      animation-play-state: running !important;
+    }
+
+    /* Shimmer button animation */
+    .btn-shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-shimmer::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(60deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform: rotate(30deg);
+      animation: btnShimmer 3s infinite;
+    }
+    @keyframes btnShimmer {
+      0% { transform: translate(-100%, -100%) rotate(30deg); }
+      40%, 100% { transform: translate(100%, 100%) rotate(30deg); }
+    }
+
+    .glow-gold {
+      box-shadow: 0 0 25px rgba(217, 119, 6, 0.45);
+    }
+    .glow-red {
+      box-shadow: 0 0 30px rgba(185, 28, 28, 0.45);
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Modal Animation */
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .animate-modal {
+      animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-[#FFFDF9] via-[#FAF3E0] to-[#F9EBEA] text-slate-900 font-sans overflow-x-hidden selection:bg-red-700 selection:text-white pb-28 sm:pb-12 antialiased">
+
+  <!-- ========================================== -->
+  <!-- 1. TOP URGENCY COUNTDOWN BANNER -->
+  <!-- ========================================== -->
+  <div class="relative z-50 bg-gradient-to-r from-red-950 via-amber-900 to-red-900 text-white text-center py-2.5 px-3 shadow-md border-b border-amber-600/40">
+    <div class="max-w-2xl mx-auto flex items-center justify-between gap-2 flex-wrap">
+      
+      <div class="flex items-center gap-1.5 text-amber-300 text-xs sm:text-sm font-black tracking-wide">
+        <span class="animate-bounce">🔥</span>
+        <span>خاص رعایت ختم ہونے میں باقی وقت:</span>
+      </div>
+
+      <div class="flex items-center gap-1.5 font-mono">
+        <div class="bg-[#FAF7EE] text-red-950 px-2.5 py-0.5 rounded-lg font-black text-xs sm:text-sm shadow">
+          <span id="timer-hours">01</span> <span class="text-[9px] text-slate-600 font-sans">hrs</span>
+        </div>
+        <span class="text-white font-bold animate-pulse">:</span>
+        <div class="bg-[#FAF7EE] text-red-950 px-2.5 py-0.5 rounded-lg font-black text-xs sm:text-sm shadow">
+          <span id="timer-minutes">38</span> <span class="text-[9px] text-slate-600 font-sans">mins</span>
+        </div>
+        <span class="text-white font-bold animate-pulse">:</span>
+        <div class="bg-[#FAF7EE] text-red-950 px-2.5 py-0.5 rounded-lg font-black text-xs sm:text-sm shadow">
+          <span id="timer-seconds">10</span> <span class="text-[9px] text-slate-600 font-sans">secs</span>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-1 text-[11px] bg-red-700/80 px-2 py-0.5 rounded-full text-amber-100 font-bold">
+        <span>⚡ فری ہوم ڈلیوری</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 2. STICKY HEADER / NAVBAR -->
+  <!-- ========================================== -->
+  <header class="relative z-40 py-3 px-3 sm:px-6 border-b border-red-700/20 bg-gradient-to-r from-amber-50/95 via-[#FFF9EE]/95 to-pink-50/90 backdrop-blur-md sticky top-0 shadow-sm transition-all">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+      
+      <!-- Brand Logo & Name -->
+      <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-start min-w-0">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="relative w-12 h-12 sm:w-14 sm:h-14 overflow-hidden rounded-full border-2 border-red-700 bg-amber-100 shadow-md shrink-0 flex items-center justify-center">
+            <img src="logo.png" alt="AM Dawakhana Logo" class="w-full h-full object-contain p-0.5" />
+          </div>
+          <div class="flex flex-col justify-center min-w-0">
+            <div class="text-sm sm:text-lg font-black tracking-tight leading-tight truncate">
+              <span class="text-amber-600">AM</span>
+              <span class="text-red-800">Unani</span>
+              <span class="text-slate-800">&amp;</span>
+              <span class="text-emerald-700">Herbal Labs</span>
+            </div>
+            <div class="text-xs sm:text-base font-extrabold leading-tight tracking-wide flex items-center gap-1 mt-0.5 truncate urdu-font-tight text-right" dir="rtl">
+              <span class="text-red-800">اے ایم</span>
+              <span class="text-emerald-800">دواخانہ</span>
+              <span class="text-[10px] text-amber-700 bg-amber-100 px-1.5 py-0.2 rounded font-sans">100% خالص</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Header Quick Buttons -->
+        <div class="flex sm:hidden items-center gap-1.5 shrink-0">
+          <a href="https://wa.me/923150894064?text=Salam,%20mujhe%20AM%20Dawakhana%20ke%20bary%20mein%20puchna%20hai."
+             target="_blank" rel="noopener noreferrer"
+             class="bg-emerald-600 hover:bg-emerald-700 text-white font-black px-3 py-1.5 rounded-lg text-xs shadow flex items-center gap-1">
+            <span>WhatsApp</span>
+          </a>
+          <a href="#order-form"
+             class="btn-shimmer bg-red-700 hover:bg-red-800 text-white font-black px-3.5 py-1.5 rounded-lg text-xs shadow uppercase tracking-wide">
+            Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop Header Actions -->
+      <div class="hidden sm:flex items-center gap-3 shrink-0">
+        <a href="https://wa.me/923150894064?text=Salam,%20mujhe%20AM%20Dawakhana%20ke%20bary%20mein%20puchna%20hai."
+           target="_blank" rel="noopener noreferrer"
+           class="bg-emerald-600 hover:bg-emerald-700 text-white font-black px-4 py-2.5 rounded-xl text-sm transition-all shadow-md flex items-center gap-2 border border-emerald-400/50 hover:shadow-lg hover:scale-105">
+          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.612-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>WhatsApp Chat</span>
+        </a>
+
+        <a href="#order-form"
+           class="btn-shimmer bg-gradient-to-r from-red-700 via-amber-700 to-red-800 hover:from-red-800 hover:to-amber-900 text-white font-black px-6 py-2.5 rounded-xl text-sm transition-all shadow-md tracking-wider uppercase border border-red-400/50 hover:shadow-lg hover:scale-105">
+          Order Now
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 3. UNSTOPPABLE URDU TICKER MARQUEE -->
+  <!-- ========================================== -->
+  <div class="relative z-30 bg-gradient-to-r from-red-950 via-amber-800 to-red-950 text-amber-200 py-3.5 sm:py-4 overflow-hidden shadow-inner border-y border-amber-500/40">
+    <div class="flex whitespace-nowrap overflow-hidden">
+      <div class="inline-flex items-center gap-14 animate-marquee-continuous font-extrabold text-sm sm:text-base tracking-wide shrink-0 urdu-font" dir="rtl">
+        <span>🚨 <strong class="text-white">اے ایم دواخانہ</strong> کا خاص نایاب نسخہ جو مردانہ قوت، جوش اور ٹائمنگ کو قدرتی طور پر بحال کرے! 🌿</span>
+        <span>⚡ کھانے کے صرف 2 گھنٹے بعد اثر شروع، 100% آزمودہ اور بے ضرر فارمولا! 🔥</span>
+        <span>💯 پہلی خوراک سے ہی کایا پلٹ نتائج! لائف پارٹنر بھی مطمئن اور خوش۔ آج ہی منگوائیں۔ 📦</span>
+        <span>🌿 نایاب زعفران، کستوری، شیلاجیت اور ثعلب مصری کا مرکب — پورے پاکستان میں فری کیش آن ڈلیوری! 🚚</span>
+      </div>
+      <div class="inline-flex items-center gap-14 animate-marquee-continuous font-extrabold text-sm sm:text-base tracking-wide shrink-0 urdu-font" dir="rtl" aria-hidden="true">
+        <span>🚨 <strong class="text-white">اے ایم دواخانہ</strong> کا خاص نایاب نسخہ جو مردانہ قوت، جوش اور ٹائمنگ کو قدرتی طور پر بحال کرے! 🌿</span>
+        <span>⚡ کھانے کے صرف 2 گھنٹے بعد اثر شروع، 100% آزمودہ اور بے ضرر فارمولا! 🔥</span>
+        <span>💯 پہلی خوراک سے ہی کایا پلٹ نتائج! لائف پارٹنر بھی مطمئن اور خوش۔ آج ہی منگوائیں۔ 📦</span>
+        <span>🌿 نایاب زعفران، کستوری، شیلاجیت اور ثعلب مصری کا مرکب — پورے پاکستان میں فری کیش آن ڈلیوری! 🚚</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MAIN CONTAINER -->
+  <!-- ========================================== -->
+  <main class="relative z-10 max-w-6xl mx-auto px-3 sm:px-6 py-6 sm:py-10">
+
+    <!-- URGENT STOCK ALERT BAR -->
+    <div class="bg-gradient-to-r from-red-100 via-amber-50 to-red-100 border-2 border-red-500/60 rounded-2xl p-3.5 mb-8 text-center shadow-md flex items-center justify-center gap-3 flex-wrap">
+      <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-red-700 text-white text-xs font-black animate-ping">⚠️</span>
+      <p class="text-xs sm:text-sm font-extrabold text-red-950">
+        <strong class="text-red-700">خبردار:</strong> آج کی ڈسکاؤنٹ آفر میں صرف <span class="bg-red-700 text-white px-2 py-0.5 rounded font-black">7 ڈبیاں</span> باقی رہ گئی ہیں! جلدی آرڈر بک کروائیں۔
+      </p>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 4. HERO SECTION -->
+    <!-- ========================================== -->
+    <section class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center mb-12 sm:mb-16">
+      
+      <!-- Left Column: Copy & Highlights -->
+      <div class="space-y-6 w-full min-w-0">
+        
+        <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-300 text-red-950 font-extrabold px-4 py-1.5 rounded-full text-xs shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-700 animate-ping"></span>
+          <span>100% خالص اور محفوظ یونانی نُسخہ</span>
+          <span>•</span>
+          <span class="text-red-900 font-black">20 ٹیبلٹس بوتل</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-b border-amber-200 pb-5">
+          <div class="text-left border-l-4 border-red-700 pl-3.5 space-y-1">
+            <h1 class="text-2xl sm:text-4xl font-black text-slate-900 tracking-wide">
+              Taqat Ka Khazana
+            </h1>
+            <p class="text-red-800 font-black text-xs sm:text-sm tracking-wide">
+              Mardana Quwwat Ka Asli Hal
+            </p>
+          </div>
+
+          <div class="text-right border-r-4 border-red-700 pr-3.5 space-y-1" dir="rtl">
+            <h2 class="text-3xl sm:text-5xl font-black text-red-950 urdu-title">
+              طاقت کا خزانہ
+            </h2>
+            <p class="text-red-800 font-black text-lg sm:text-2xl urdu-font-tight">
+              مردانہ قوت کا بااعتماد حل
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white via-[#FFFDF9] to-amber-50/50 p-5 sm:p-6 rounded-3xl border-2 border-amber-300/80 shadow-md text-right w-full" dir="rtl">
+          <p class="text-slate-900 text-base sm:text-xl font-bold leading-loose urdu-font">
+            طاقتور ہربل فارمولا ہے جو خاص طور پر اُن مردوں کے لیے تیار کیا گیا ہے جو کمزوری، اعصابی کھچاؤ، کم ٹائمنگ اور نقاہت کا شکار ہیں۔ بغیر کسی سائیڈ ایفیکٹ کے دائمی قوت اور اعتماد بحال کرے۔
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+          <div class="bg-white/95 p-4 sm:p-5 rounded-2xl border border-amber-200 text-left shadow-md hover:border-red-600 transition-all hover:shadow-lg">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-red-800 font-black text-[10px] uppercase tracking-widest bg-amber-100 px-2.5 py-0.5 rounded">
+                Product Overview
+              </span>
+              <span class="text-red-600 text-base">🔥</span>
+            </div>
+            <p class="text-slate-700 font-medium text-xs sm:text-sm leading-relaxed">
+              AM Vitality Tablet is a master blend of rare Himalayan herbs designed to deliver absolute vigor, peak stamina, and enduring performance.
+            </p>
+          </div>
+
+          <div class="bg-white/95 p-4 sm:p-5 rounded-2xl border border-amber-200 text-right shadow-md hover:border-red-600 transition-all hover:shadow-lg" dir="rtl">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-red-700 font-black text-xs bg-amber-100 px-2.5 py-0.5 rounded">
+                پروڈکٹ کا تعارف
+              </span>
+              <span class="text-emerald-700 text-base">🌿</span>
+            </div>
+            <p class="text-slate-800 text-base sm:text-lg font-bold urdu-font-tight">
+              اے ایم وائٹلٹی ٹیبلٹ نایاب دیسی جڑی بوٹیوں کا شاہکار مرکب ہے، جو دیتا ہے بھرپور طاقت، دیرپا اسٹیمنا اور ازلی جوش۔
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 sm:gap-3">
+          <div class="bg-white/95 border-2 border-amber-200 hover:border-red-600 p-3.5 rounded-2xl text-center shadow-sm transition-all transform hover:-translate-y-1">
+            <div class="text-red-800 font-black text-sm sm:text-base">20 Tablets</div>
+            <div class="text-slate-800 text-xs mt-1 font-bold urdu-font-tight">20 ٹیبلٹس بوتل</div>
+          </div>
+          <div class="bg-white/95 border-2 border-amber-200 hover:border-red-600 p-3.5 rounded-2xl text-center shadow-sm transition-all transform hover:-translate-y-1">
+            <div class="text-red-800 font-black text-sm sm:text-base">100% Herbal</div>
+            <div class="text-slate-800 text-xs mt-1 font-bold urdu-font-tight">بغیر نقصان و سائیڈ ایفیکٹ</div>
+          </div>
+          <div class="bg-white/95 border-2 border-amber-200 hover:border-red-600 p-3.5 rounded-2xl text-center shadow-sm transition-all transform hover:-translate-y-1">
+            <div class="text-red-800 font-black text-sm sm:text-base">Free Delivery</div>
+            <div class="text-slate-800 text-xs mt-1 font-bold urdu-font-tight">مفت ہوم ڈلیوری</div>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="#order-form"
+             class="btn-shimmer block text-center w-full bg-gradient-to-r from-red-700 via-amber-700 to-red-800 hover:from-red-800 hover:to-amber-900 text-white font-black py-4 rounded-2xl shadow-xl text-sm sm:text-base tracking-wider uppercase border border-red-400/50 hover:shadow-2xl transition-all transform hover:-translate-y-0.5">
+            ⚡ CLAIM SPECIAL DISCOUNT - ORDER NOW / ابھی آرڈر کریں
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Interactive Product Image Galleries -->
+      <div class="flex flex-col gap-6 w-full min-w-0">
+        
+        <!-- Primary Carousel (1.jpg to 9.jpg) -->
+        <div class="relative w-full bg-white/90 backdrop-blur-sm rounded-3xl p-3 sm:p-5 shadow-2xl border-2 border-amber-300/80 flex flex-col gap-3">
+          
+          <div class="relative w-full aspect-[4/3] max-h-[380px] overflow-hidden rounded-2xl bg-[#0a0a0a] shadow-inner flex items-center justify-center cursor-zoom-in group"
+               onclick="openLightbox(mainGalleryImages[currentMainIndex])" title="Click to view full screen">
+            <img id="main-active-img" src="1.jpg" alt="AM Vitality Tablet View 1"
+                 class="w-full h-full object-contain transition-all duration-500 group-hover:scale-105" />
+            
+            <div class="absolute top-3 right-3 bg-black/60 hover:bg-black/80 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg backdrop-blur-sm flex items-center gap-1 shadow">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              <span>Click to Zoom</span>
+            </div>
+
+            <div class="absolute top-3 left-3 bg-red-700 text-white font-black text-xs px-3 py-1 rounded-full shadow-lg border border-red-400 animate-pulse">
+              50% OFF
+            </div>
+
+            <button onclick="event.stopPropagation(); prevMainImage();" 
+                    class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-red-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all opacity-85 hover:opacity-100 shadow-lg text-lg">
+              &#10094;
+            </button>
+            <button onclick="event.stopPropagation(); nextMainImage();" 
+                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-red-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all opacity-85 hover:opacity-100 shadow-lg text-lg">
+              &#10095;
+            </button>
+          </div>
+
+          <div id="main-thumbs-container" class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-1 pt-1 max-w-full no-scrollbar">
+          </div>
+        </div>
+
+        <!-- Secondary Carousel (10.jpg to 11.jpg Extra Views) -->
+        <div class="relative w-full bg-white/90 backdrop-blur-sm rounded-3xl p-3 sm:p-5 shadow-xl border-2 border-amber-300/80 flex flex-col gap-3">
+          <div class="relative w-full aspect-[4/3] max-h-[300px] overflow-hidden rounded-2xl bg-[#0a0a0a] shadow-inner flex items-center justify-center cursor-zoom-in group"
+               onclick="openLightbox(extraGalleryImages[currentExtraIndex])" title="Click to view full screen">
+            <img id="extra-active-img" src="10.jpg" alt="AM Vitality Tablet Extra View"
+                 class="w-full h-full object-contain transition-all duration-500 group-hover:scale-105" />
+            
+            <div class="absolute top-3 right-3 bg-black/60 text-white text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">
+              Authentic Original Pack
+            </div>
+          </div>
+
+          <div id="extra-thumbs-container" class="flex items-center justify-center gap-2 overflow-x-auto pb-1 pt-1 max-w-full">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. PRODUCT VIDEOS SECTION -->
+    <!-- ========================================== -->
+    <section class="mb-12 sm:mb-16">
+      <div class="bg-white/95 border-2 border-amber-200 rounded-3xl p-5 sm:p-8 shadow-xl text-center">
+        <span class="bg-amber-100 text-red-950 font-black text-xs px-4 py-1.5 rounded-full uppercase tracking-widest inline-block mb-2 shadow-sm">
+          Extra Demonstration &amp; Unboxing
+        </span>
+        <h3 class="text-xl sm:text-3xl font-black text-slate-900">
+          Product Demonstration Videos
+        </h3>
+        <p class="text-slate-800 text-base sm:text-xl mt-1 mb-6 font-bold urdu-font" dir="rtl">
+          ویڈیوز اور کسٹمرز کے حقیقی تاثرات ملاحظہ فرمائیں
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Video 1 -->
+          <div class="bg-[#FAF7EE] border-2 border-amber-200 p-4 rounded-2xl shadow-sm flex flex-col items-center">
+            <div class="w-full aspect-video bg-black rounded-xl overflow-hidden relative border border-amber-300 group flex items-center justify-center shadow-inner">
+              <video id="video1" controls preload="metadata" playsinline poster="1.jpg"
+                     class="w-full h-full object-contain bg-black">
+                <source src="video1.mp4" type="video/mp4" />
+                Aap ka browser video support nahi karta.
+              </video>
+              
+              <div id="video1-overlay" onclick="togglePlayVideo('video1', 'video1-overlay')"
+                   class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer group-hover:bg-black/20 transition-all">
+                <div class="w-16 h-16 bg-red-700 hover:bg-red-800 rounded-full flex items-center justify-center shadow-2xl border-2 border-white transition-transform hover:scale-110">
+                  <svg class="w-8 h-8 fill-white ml-1" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="text-red-950 font-black text-sm sm:text-base mt-3">
+              Official Introduction &amp; Working Mechanism
+            </p>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="bg-[#FAF7EE] border-2 border-amber-200 p-4 rounded-2xl shadow-sm flex flex-col items-center">
+            <div class="w-full aspect-video bg-black rounded-xl overflow-hidden relative border border-amber-300 group flex items-center justify-center shadow-inner">
+              <video id="video2" controls preload="metadata" playsinline poster="2.jpg"
+                     class="w-full h-full object-contain bg-black">
+                <source src="video2.mp4" type="video/mp4" />
+                Aap ka browser video support nahi karta.
+              </video>
+              
+              <div id="video2-overlay" onclick="togglePlayVideo('video2', 'video2-overlay')"
+                   class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer group-hover:bg-black/20 transition-all">
+                <div class="w-16 h-16 bg-red-700 hover:bg-red-800 rounded-full flex items-center justify-center shadow-2xl border-2 border-white transition-transform hover:scale-110">
+                  <svg class="w-8 h-8 fill-white ml-1" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="text-red-950 font-black text-sm sm:text-base mt-3">
+              Unboxing &amp; Customer Reviews
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. KEY INGREDIENTS SECTION (12 نایاب اجزاء) -->
+    <!-- ========================================== -->
+    <section class="mb-12 sm:mb-16">
+      <div class="bg-white/95 border-2 border-amber-200 rounded-3xl p-5 sm:p-8 shadow-xl">
+        <div class="text-center mb-6 sm:mb-8">
+          <span class="bg-amber-100 text-red-950 font-black text-xs px-4 py-1.5 rounded-full uppercase tracking-widest inline-block shadow-sm">
+            Khaas Unani Nuskha
+          </span>
+          <h3 class="text-2xl sm:text-4xl font-black text-slate-900 mt-3">
+            Key Ingredients / <span class="urdu-title text-red-800">نایاب دیسی اجزاء کی تفصیل</span>
+          </h3>
+          <p class="text-slate-700 text-xs sm:text-sm mt-1.5 font-semibold">
+            Har tablet mein shamil 12 behtareen qudrati aur kamil ajza jo aap ko dein mukammal quwwat.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3.5">
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Zafran (زعفران)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Energy &amp; Blood Circulation</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Salab Misri (ثعلب مصری)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Stamina &amp; Muscle Strength</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Shilajit (شیلاجیت)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Pure Himalayan Mineral Tonic</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Akarkara (عقرقرحا)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Nerve Stimulation &amp; Josh</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Kasturi (کستوری)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Maximum Strength Booster</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Jund Bedastar (جند بدستر)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Physical Power &amp; Vigor</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Asgandh (اسگندھ ناگوری)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Stress Relief &amp; Stamina</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Maghaz Chilgoza (مغز جلغوزہ)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Natural Body Warmth</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Tukhm E Rehan (تخم ریحان)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Cooling &amp; Energy Balance</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Darchini (دارچینی)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Metabolism &amp; Circulation</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Jaifal &amp; Javitri (جائفل و جوتری)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Vitality &amp; Performance</div>
+          </div>
+          <div class="bg-[#FAF7EE] border border-amber-200 p-4 rounded-xl text-center space-y-1 hover:border-red-600 hover:shadow-md transition-all">
+            <div class="text-red-950 font-black text-sm sm:text-base">Kushta Tilla (کشتہ طلا)</div>
+            <div class="text-slate-600 text-[11px] font-medium">Ultimate Strength Formula</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 7. WHY CHOOSE AM DAWAKHANA -->
+    <!-- ========================================== -->
+    <section class="mb-12 sm:mb-16">
+      <div class="text-center mb-6 sm:mb-8">
+        <h3 class="text-xl sm:text-3xl font-black text-slate-900">
+          Why Choose AM Dawakhana?
+        </h3>
+        <p class="text-red-800 text-xl sm:text-2xl mt-1 font-bold urdu-font" dir="rtl">
+          اے ایم دواخانہ ہی کیوں منتخب کریں؟
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white/95 border-2 border-amber-200 p-5 rounded-3xl text-center space-y-2 hover:border-red-600 hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="text-4xl animate-bounce">🌿</div>
+          <div class="text-red-950 font-black text-sm sm:text-base">100% Organic</div>
+          <p class="text-slate-700 text-xs font-semibold">Pure Herbal Formula</p>
+        </div>
+        <div class="bg-white/95 border-2 border-amber-200 p-5 rounded-3xl text-center space-y-2 hover:border-red-600 hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="text-4xl animate-pulse">⚡</div>
+          <div class="text-red-950 font-black text-sm sm:text-base">Fast Action</div>
+          <p class="text-slate-700 text-xs font-semibold">Asar 1-2 Ghante Mein</p>
+        </div>
+        <div class="bg-white/95 border-2 border-amber-200 p-5 rounded-3xl text-center space-y-2 hover:border-red-600 hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="text-4xl">📦</div>
+          <div class="text-red-950 font-black text-sm sm:text-base">Discreet Packing</div>
+          <p class="text-slate-700 text-xs font-semibold">Full Raazdaari Ke Saath</p>
+        </div>
+        <div class="bg-white/95 border-2 border-amber-200 p-5 rounded-3xl text-center space-y-2 hover:border-red-600 hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="text-4xl">🚚</div>
+          <div class="text-red-950 font-black text-sm sm:text-base">Free Delivery</div>
+          <div class="text-slate-700 text-xs font-semibold">Cash On Delivery</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 8. PRICE PACKAGES BOX (INTERACTIVE SELECTION) -->
+    <!-- ========================================== -->
+    <section class="bg-white/95 border-2 border-amber-200 text-slate-900 rounded-3xl p-5 sm:p-10 mb-12 sm:mb-16 text-center relative overflow-hidden shadow-2xl">
+      <div class="inline-block bg-red-700 text-white font-black text-xs px-4 py-1.5 rounded-full mb-3 shadow-md uppercase tracking-wider animate-pulse">
+        Khaas Riayat Offer
+      </div>
+
+      <h2 class="text-2xl sm:text-4xl font-black mb-2 text-slate-900">
+        AM Dawakhana Price Packages
+      </h2>
+      <p class="text-red-800 text-lg sm:text-2xl mb-6 font-bold urdu-font" dir="rtl">
+        قیمت کی تفصیلات - پورے پاکستان میں مفت ہوم ڈیلیوری
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
+        
+        <!-- Package 1 -->
+        <div onclick="selectPackageFromCard('1 Bottle (20 Tablets) - Rs. 2,299')"
+             class="group cursor-pointer bg-[#FAF7EE] border-2 border-amber-300 hover:border-red-700 p-6 rounded-3xl text-center shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
+          <div class="text-slate-800 font-black text-base sm:text-lg">1 Bottle (20 Tablets)</div>
+          <div class="text-red-950 text-base sm:text-xl font-bold mt-0.5 urdu-font-tight" dir="rtl">ایک بوتل (20 ٹیبلٹس)</div>
+          <div class="text-red-800 text-3xl sm:text-5xl font-black my-3">Rs. 2,299</div>
+          <div class="text-xs text-slate-600 font-bold bg-amber-100 py-1 px-3 rounded-full inline-block">Free Delivery Included</div>
+          <div class="mt-5 pt-3 border-t border-amber-200 text-xs sm:text-sm font-black text-red-700 group-hover:text-red-900 flex items-center justify-center gap-1.5">
+            <span>یہ ڈیل منتخب کریں</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Package 2 (Bachat Offer) -->
+        <div onclick="selectPackageFromCard('2 Bottles (40 Tablets) - Rs. 4,400')"
+             class="group cursor-pointer bg-gradient-to-br from-red-50 to-amber-100 border-3 border-red-700 p-6 rounded-3xl text-center shadow-xl hover:shadow-2xl transition-all relative transform hover:-translate-y-1 glow-gold">
+          <div class="absolute -top-3.5 right-4 bg-red-700 text-white font-black text-xs px-4 py-1 rounded-full shadow-lg border border-red-400 animate-pulse">
+            سب سے زیادہ مقبول (Bachat Offer)
+          </div>
+          <div class="text-red-950 font-black text-base sm:text-lg">2 Bottles (40 Tablets)</div>
+          <div class="text-red-900 text-base sm:text-xl font-bold mt-0.5 urdu-font-tight" dir="rtl">دو بوتلیں (40 ٹیبلٹس - مکمل کورس)</div>
+          <div class="text-red-800 text-3xl sm:text-5xl font-black my-3">Rs. 4,400</div>
+          <div class="text-xs text-red-950 font-black bg-amber-400/90 py-1 px-3 rounded-full inline-block">Special Discount + Free Delivery</div>
+          <div class="mt-5 pt-3 border-t border-red-200 text-xs sm:text-sm font-black text-red-800 group-hover:text-red-950 flex items-center justify-center gap-1.5">
+            <span>یہ ڈیل منتخب کریں (مفت تحفہ)</span> &rarr;
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 9. REVIEWS (SHOW 3 REVIEWS BY DEFAULT) -->
+    <!-- ========================================== -->
+    <section id="reviews-section" class="mb-12 sm:mb-16 scroll-mt-24">
+      <div class="text-center mb-8">
+        <h3 class="text-2xl sm:text-4xl font-black text-red-950 uppercase tracking-wider">
+          Trusted By Thousands - Real Customers Feedback
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-700 mt-1 font-semibold">
+          Verified buyers sharing their experience with AM Vitality Tablet.
+        </p>
+      </div>
+
+      <!-- Rating Summary Card -->
+      <div class="bg-white/95 border-2 border-amber-200 rounded-3xl p-6 sm:p-8 max-w-3xl mx-auto shadow-xl mb-8 flex flex-col sm:flex-row items-center justify-around gap-6">
+        <div class="text-center">
+          <div class="text-5xl font-black text-red-950">4.9</div>
+          <div class="flex text-amber-500 text-base justify-center my-1 tracking-widest">★★★★★</div>
+          <div class="text-xs text-slate-600 font-bold">Based on 3,450+ Verified Reviews</div>
+        </div>
+        <div class="w-full sm:w-1/2 space-y-2">
+          <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+            <span>5★</span>
+            <div class="flex-1 h-3 bg-amber-100 rounded-full overflow-hidden">
+              <div class="w-[92%] h-full bg-gradient-to-r from-red-800 to-amber-600 rounded-full"></div>
+            </div>
+            <span class="text-[10px] text-slate-500">92%</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+            <span>4★</span>
+            <div class="flex-1 h-3 bg-amber-100 rounded-full overflow-hidden">
+              <div class="w-[7%] h-full bg-gradient-to-r from-red-800 to-amber-600 rounded-full"></div>
+            </div>
+            <span class="text-[10px] text-slate-500">7%</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+            <span>3★</span>
+            <div class="flex-1 h-3 bg-amber-100 rounded-full overflow-hidden">
+              <div class="w-[1%] h-full bg-gradient-to-r from-red-800 to-amber-600 rounded-full"></div>
+            </div>
+            <span class="text-[10px] text-slate-500">1%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top 3 Reviews (Always Visible) -->
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 hover:shadow-xl transition-all">
+          <div class="flex items-center justify-between">
+            <div class="font-black text-slate-900 text-base">Bilal Ahmed</div>
+            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+          </div>
+          <div class="flex text-amber-500 text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+            "Worth it cheez hai or me BP patient hun but mera BP control rehta hai is tablets sy."
+          </p>
+          <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 hover:shadow-xl transition-all">
+          <div class="flex items-center justify-between">
+            <div class="font-black text-slate-900 text-base">Rizwan</div>
+            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+          </div>
+          <div class="flex text-amber-500 text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+            "AM Vitality Tablet ka experience honestly kaafi acha raha. Confidence mein noticeable improvement feel hui."
+          </p>
+          <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 hover:shadow-xl transition-all">
+          <div class="flex items-center justify-between">
+            <div class="font-black text-slate-900 text-base">Ahmed Khan</div>
+            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+          </div>
+          <div class="flex text-amber-500 text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+            "First time meny koi herbal tablet use ki hai aur me to aap logo ka regular customer ban gaya hun. Love you AM Dawakhana!"
+          </p>
+          <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+        </div>
+
+      </div>
+
+      <!-- Expandable Extra Reviews (Hidden by default, smooth toggle) -->
+      <div id="extra-reviews" class="hidden transition-all duration-300">
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+          
+          <!-- Review 4 (Urdu) -->
+          <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 text-right hover:shadow-xl transition-all" dir="rtl">
+            <div class="flex items-center justify-between">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">تصدیق شدہ خریدار</span>
+              <div class="font-black text-slate-900 text-base">محمد علی</div>
+            </div>
+            <div class="flex text-amber-500 text-sm justify-end">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-loose urdu-font-tight">
+              بہت زبردست نسخہ ہے۔ استعمال کے بعد جسم میں چستی اور قوت محسوس ہوتی ہے۔ کوئی سائیڈ ایفیکٹ نہیں۔
+            </p>
+            <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between">
+              <div class="font-black text-slate-900 text-base">Muneeb</div>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+            </div>
+            <div class="flex text-amber-500 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              "Main ne AM Vitality Tablet try ki aur mujhe iska overall experience kaafi impressive laga. Quality zabardast hai."
+            </p>
+            <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+          </div>
+
+          <!-- Review 6 -->
+          <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between">
+              <div class="font-black text-slate-900 text-base">Usman Ali</div>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+            </div>
+            <div class="flex text-amber-500 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              "Pehly me inki normal items use karta tha but AM Vitality Tablet bhai bht hi behtareen cheez hai."
+            </p>
+            <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+          </div>
+
+          <!-- Review 7 (Urdu) -->
+          <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 text-right hover:shadow-xl transition-all" dir="rtl">
+            <div class="flex items-center justify-between">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">تصدیق شدہ خریدار</span>
+              <div class="font-black text-slate-900 text-base">طارق جمیل</div>
+            </div>
+            <div class="flex text-amber-500 text-sm justify-end">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-loose urdu-font-tight">
+              مکمل کورس منگوایا تھا، نتائج توقع سے بڑھ کر اچھے آئے۔ اے ایم دواخانہ کا شکریہ۔
+            </p>
+            <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+          </div>
+
+          <!-- Review 8 -->
+          <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between">
+              <div class="font-black text-slate-900 text-base">Hamza</div>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+            </div>
+            <div class="flex text-amber-500 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              "Herbal products mein se AM Vitality mujhe sab se better laga. Use ke baad energy level high rehta hai."
+            </p>
+            <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+          </div>
+
+          <!-- Review 9 -->
+          <div class="bg-white/95 border-t-4 border-red-700 border-x border-b border-amber-200 p-6 rounded-2xl shadow-md space-y-3 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between">
+              <div class="font-black text-slate-900 text-base">Fahad Mustafa</div>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+            </div>
+            <div class="flex text-amber-500 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              "Packing bohot secure aur confidential thi. Delivery bhi 2 din mein mil gayi thi. Highly recommended."
+            </p>
+            <div class="pt-2 text-xs font-bold text-red-800 uppercase tracking-wide">AM Vitality Tablet</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Toggle Button -->
+      <div class="text-center mt-8">
+        <button id="toggle-reviews-btn" onclick="toggleReviews()"
+                class="bg-amber-200 hover:bg-amber-300 text-red-950 font-black px-8 py-3.5 rounded-full text-sm shadow-md transition-all border border-amber-300 active:scale-95">
+          See More Reviews / مزید ریویوز دیکھیں (10+)
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 10. ORDER FORM SECTION -->
+    <!-- ========================================== -->
+    <section id="order-form" class="max-w-xl mx-auto scroll-mt-24">
+      <div class="bg-white/95 border-3 border-red-700 rounded-3xl p-5 sm:p-10 shadow-2xl relative glow-red">
+        
+        <div class="text-center mb-6 sm:mb-8">
+          <div class="inline-block bg-red-700 text-white font-black text-xs px-4 py-1.5 rounded-full uppercase tracking-wider mb-2 shadow-sm animate-pulse">
+            Cash On Delivery Across Pakistan 🚚
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900">
+            Order Form / <span class="urdu-title text-red-800">آرڈر فارم</span>
+          </h2>
+          <p class="text-slate-800 text-base sm:text-xl mt-1 font-bold urdu-font" dir="rtl">
+            اپنی درست تفصیلات درج کریں، آپ کا پارسل 2 سے 3 دنوں میں پہنچا دیا جائے گا۔
+          </p>
+        </div>
+
+        <form id="main-order-form" onsubmit="handleFormSubmitModal(event)" class="space-y-4 sm:space-y-5">
+          
+          <!-- Full Name -->
+          <div>
+            <label class="block text-slate-800 font-extrabold text-xs sm:text-base mb-1.5 flex justify-between items-center">
+              <span>Full Name</span>
+              <span class="urdu-font-tight text-red-800 text-sm font-black" dir="rtl">پورا نام *</span>
+            </label>
+            <input type="text" id="cust-name" required
+                   placeholder="Apna poora naam likhein / اپنا نام لکھیں"
+                   class="w-full bg-[#FAF7EE] border-2 border-amber-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-red-700 focus:ring-2 focus:ring-red-400/30 transition-all font-medium" />
+          </div>
+
+          <!-- Mobile / WhatsApp Number -->
+          <div>
+            <label class="block text-slate-800 font-extrabold text-xs sm:text-base mb-1.5 flex justify-between items-center">
+              <span>Mobile / WhatsApp Number</span>
+              <span class="urdu-font-tight text-red-800 text-sm font-black" dir="rtl">موبائل نمبر *</span>
+            </label>
+            <input type="tel" id="cust-phone" required
+                   placeholder="03XXXXXXXXX"
+                   pattern="03[0-9]{9}"
+                   title="Please enter a valid 11 digit Pakistani phone number starting with 03"
+                   class="w-full bg-[#FAF7EE] border-2 border-amber-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-red-700 focus:ring-2 focus:ring-red-400/30 transition-all font-mono font-bold" />
+            <p class="text-[11px] text-slate-600 mt-1 font-semibold">مثال: 03001234567 (11 ہندسے)</p>
+          </div>
+
+          <!-- Street / House Address -->
+          <div>
+            <label class="block text-slate-800 font-extrabold text-xs sm:text-base mb-1.5 flex justify-between items-center">
+              <span>Street / House Address</span>
+              <span class="urdu-font-tight text-red-800 text-sm font-black" dir="rtl">گھر کا مکمل پتہ / گلی نمبر *</span>
+            </label>
+            <input type="text" id="cust-address" required
+                   placeholder="House/Shop No, Street, Area"
+                   class="w-full bg-[#FAF7EE] border-2 border-amber-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-red-700 focus:ring-2 focus:ring-red-400/30 transition-all font-medium" />
+          </div>
+
+          <!-- City -->
+          <div>
+            <label class="block text-slate-800 font-extrabold text-xs sm:text-base mb-1.5 flex justify-between items-center">
+              <span>City</span>
+              <span class="urdu-font-tight text-red-800 text-sm font-black" dir="rtl">شہر کا نام *</span>
+            </label>
+            <input type="text" id="cust-city" required
+                   placeholder="e.g. Karachi, Lahore, Islamabad, Rawalpindi"
+                   class="w-full bg-[#FAF7EE] border-2 border-amber-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-red-700 focus:ring-2 focus:ring-red-400/30 transition-all font-medium" />
+          </div>
+
+          <!-- Select Deal / Package Custom Dropdown -->
+          <div>
+            <label class="block text-slate-800 font-extrabold text-xs sm:text-base mb-1.5 flex justify-between items-center">
+              <span>Select Deal / Package</span>
+              <span class="urdu-font-tight text-red-800 text-sm font-black" dir="rtl">پیکج منتخب کریں *</span>
+            </label>
+
+            <div class="relative">
+              <button type="button" id="dropdown-toggle" onclick="toggleDropdown()"
+                      class="w-full bg-[#FAF7EE] border-2 border-red-700 rounded-2xl px-4 py-3.5 text-xs sm:text-sm text-red-950 font-black cursor-pointer flex justify-between items-center shadow-sm hover:border-red-800 transition-all text-left">
+                <span id="selected-package-text" class="truncate pr-2">1 Bottle (20 Tablets) - Rs. 2,299</span>
+                <span id="dropdown-arrow" class="text-red-800 transform transition-transform duration-300 text-lg">▼</span>
+              </button>
+
+              <div id="dropdown-menu" class="hidden absolute top-full left-0 right-0 mt-2 bg-white border-2 border-red-700 rounded-2xl shadow-2xl z-50 overflow-hidden backdrop-blur-xl">
+                <div onclick="selectPackage('1 Bottle (20 Tablets) - Rs. 2,299')"
+                     class="px-4 py-3.5 text-xs sm:text-sm text-slate-800 font-bold hover:bg-red-700 hover:text-white cursor-pointer border-b border-amber-100 transition-all flex items-center justify-between">
+                  <span>1 Bottle (20 Tablets) - Rs. 2,299</span>
+                  <span class="text-[10px] bg-amber-100 px-2.5 py-0.5 rounded text-red-950 font-mono font-bold">Free Delivery</span>
+                </div>
+
+                <div onclick="selectPackage('2 Bottles (40 Tablets) - Rs. 4,400')"
+                     class="px-4 py-3.5 text-xs sm:text-sm text-red-950 font-black hover:bg-red-700 hover:text-white cursor-pointer transition-all flex items-center justify-between bg-amber-50/50">
+                  <span>2 Bottles (40 Tablets) - Rs. 4,400</span>
+                  <span class="text-[10px] bg-amber-500 text-slate-950 px-2.5 py-0.5 rounded font-black">Bachat Offer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-emerald-50 border border-emerald-300 rounded-xl p-3 flex items-center gap-2.5 text-emerald-950 text-xs font-bold" dir="rtl">
+            <span class="text-base">🛡️</span>
+            <span>گارنٹی: پارسل کھول کر چیک کریں، مکمل تسلی کے بعد کیش ادا کریں۔</span>
+          </div>
+
+          <!-- Submit Button (Triggers Confirmation Modal) -->
+          <button type="submit" id="submit-btn"
+                  class="btn-shimmer w-full bg-gradient-to-r from-red-700 via-amber-700 to-red-900 hover:from-red-800 hover:to-red-950 text-white font-black text-sm sm:text-lg py-4 rounded-2xl shadow-2xl transition-all uppercase tracking-wider border-2 border-red-400/50 hover:shadow-2xl active:scale-[0.98]">
+            CONFIRM ORDER NOW / آرڈر کی تصدیق کریں
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 11. CONFIRMATION POPUP MODAL (RESTORED)    -->
+  <!-- ========================================== -->
+  <div id="confirm-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md">
+    <div class="bg-white border-3 border-red-700 rounded-3xl p-6 sm:p-8 max-w-md w-full text-center shadow-2xl space-y-5 relative animate-modal">
+      
+      <div class="w-16 h-16 sm:w-20 sm:h-20 bg-amber-100 border-2 border-red-700 text-red-700 rounded-full flex items-center justify-center mx-auto text-3xl sm:text-4xl shadow-md">
+        🛒
+      </div>
+
+      <div class="space-y-1">
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900">
+          Confirm Your Order?
+        </h3>
+        <h4 class="text-lg sm:text-2xl font-bold text-red-900 urdu-font-tight" dir="rtl">
+          کیا آپ آرڈر کی تصدیق کرنا چاہتے ہیں؟
+        </h4>
+      </div>
+
+      <div class="bg-[#FAF7EE] p-4 rounded-2xl border-2 border-amber-200 text-xs sm:text-sm text-slate-800 text-left space-y-2.5 shadow-inner">
+        <p><strong class="text-red-900">Naam:</strong> <span id="modal-name" class="font-bold"></span></p>
+        <p><strong class="text-red-900">Number:</strong> <span id="modal-phone" class="font-bold font-mono"></span></p>
+        <p><strong class="text-red-900">Package:</strong> <span id="modal-package" class="font-bold text-emerald-800"></span></p>
+        <p><strong class="text-red-900">Address:</strong> <span id="modal-address" class="font-medium"></span></p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 pt-2">
+        <button type="button" onclick="closeConfirmModal()"
+                class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-extrabold py-3.5 rounded-xl transition-all text-xs sm:text-sm active:scale-95">
+          Nahi / بند کریں
+        </button>
+
+        <button type="button" id="confirm-submit-btn" onclick="executeFinalOrderAndRedirect()"
+                class="btn-shimmer w-full bg-red-700 hover:bg-red-800 text-white font-black py-3.5 rounded-xl shadow-lg transition-all text-xs sm:text-sm active:scale-95 border border-red-400">
+          Haan / تصدیق کریں
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 12. RECENT ORDER SOCIAL PROOF TOAST -->
+  <!-- ========================================== -->
+  <div id="recent-order-toast" class="hidden fixed bottom-20 sm:bottom-6 left-4 z-50 bg-white border border-red-700/40 text-slate-900 px-3.5 py-2.5 rounded-xl shadow-2xl flex items-center gap-2.5 transition-all duration-300 max-w-[280px]">
+    <div class="w-9 h-9 rounded-full bg-red-700 text-white font-black flex items-center justify-center shrink-0 text-sm shadow">
+      📦
+    </div>
+    <div>
+      <p class="text-[11px] font-bold text-red-950 leading-tight">نیا آرڈر موصول ہوا!</p>
+      <p class="text-[10px] text-slate-700 font-medium leading-tight mt-0.5">
+        <strong id="toast-buyer-name" class="text-slate-900">Bilal Ahmed</strong> (<span id="toast-buyer-city">Karachi</span>) • <span id="toast-buyer-time" class="text-red-700 font-bold">Just now</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 13. FLOATING WHATSAPP CHAT BUTTON -->
+  <!-- ========================================== -->
+  <a href="https://wa.me/923150894064?text=Salam,%20mujhe%20AM%20Dawakhana%20ke%20bary%20mein%20puchna%20hai."
+     target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-20 sm:bottom-6 right-4 z-40 bg-emerald-600 hover:bg-emerald-700 text-white p-3.5 sm:p-4 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 border-2 border-emerald-400 group"
+     title="Chat on WhatsApp">
+    <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.612-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <span class="absolute right-full mr-2 bg-slate-900 text-white text-[11px] font-bold py-1 px-2.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow">
+      Chat with Doctor
+    </span>
+  </a>
+
+  <!-- ========================================== -->
+  <!-- 14. MOBILE STICKY BOTTOM ACTION BAR -->
+  <!-- ========================================== -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 p-3 bg-[#FAF7EE]/95 border-t border-amber-300 backdrop-blur-md shadow-2xl">
+    <a href="#order-form"
+       class="btn-shimmer block text-center w-full bg-gradient-to-r from-red-700 via-amber-700 to-red-800 text-white font-black py-3.5 rounded-xl shadow-lg text-xs tracking-wider uppercase border border-red-500">
+      ⚡ ORDER NOW (CASH ON DELIVERY)
+    </a>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 15. FOOTER -->
+  <!-- ========================================== -->
+  <footer class="relative z-10 border-t-4 border-red-700 bg-gradient-to-r from-red-950 via-amber-950 to-red-900 pt-12 pb-24 sm:pb-10 text-white mt-16 shadow-2xl">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      
+      <div class="space-y-3">
+        <div class="flex items-center gap-3">
+          <div class="relative w-12 h-12 rounded-full border-2 border-amber-400 overflow-hidden bg-amber-100 shadow-md flex items-center justify-center">
+            <img src="logo.png" alt="Logo" class="w-full h-full object-contain p-1" />
+          </div>
+          <h4 class="font-black text-amber-300 text-lg sm:text-xl">AM Unani &amp; Herbal Labs</h4>
+        </div>
+        <p class="text-xs text-amber-100 leading-relaxed font-medium">
+          Pakistan ka bharpoor aur qabil-e-itminan idara jo faraham karta hai 100% khalis aur behtareen herbal nuskha-jat.
+        </p>
+      </div>
+
+      <div class="space-y-3 text-left">
+        <h5 class="font-black text-amber-400 text-sm uppercase tracking-wider">Contact &amp; Support</h5>
+        <ul class="space-y-2 text-xs font-semibold text-amber-100">
+          <li class="flex items-center gap-2"><span class="text-amber-400">📞</span> Contact / WhatsApp: +92 315 0894064</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> 100% Pure Himalayan Herbs</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Free Discreet Delivery Across Pakistan</li>
+        </ul>
+      </div>
+
+      <div class="space-y-3 text-right" dir="rtl">
+        <h5 class="font-black text-amber-400 text-3xl urdu-title">اے ایم دواخانہ</h5>
+        <p class="text-sm text-amber-100 font-bold leading-loose urdu-font-tight">
+          اعتماد، صحت اور قدرت کا بہترین امتزاج۔ 100٪ دیسی اور محفوظ نسخہ جات۔
+        </p>
+        <div class="pt-2">
+          <span class="inline-block bg-red-900/80 border border-amber-400/50 text-amber-200 text-xs px-3.5 py-1 rounded-lg font-mono">
+            📞 Help Desk / WhatsApp: +92 315 0894064
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-red-800 text-center flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-amber-200/80 font-semibold">
+      <p>© 2026 AM Unani &amp; Herbal Labs. All Rights Reserved.</p>
+      <p class="text-amber-400 font-bold tracking-wide">Pure Herbal Mastery</p>
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- 16. LIGHTBOX IMAGE ZOOM MODAL -->
+  <!-- ========================================== -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+       onclick="closeLightbox()">
+    <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-amber-400 text-3xl font-black z-50">
+      &times;
+    </button>
+    <img id="lightbox-img" src="" alt="Enlarged view" class="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl"
+         onclick="event.stopPropagation()" />
+  </div>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT LOGIC & GOOGLE SHEETS REDIRECT -->
+  <!-- ========================================== -->
+  <script>
+    // -------------------------------------------------------------
+    // CONFIGURATION: GOOGLE APPS SCRIPT URL
+    // -------------------------------------------------------------
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwgxx2TKUrsW54MqBtXS6B4HoLOK0cU0-TAkRH6f-FDsAjA6hMP1IWTWfRjc1Gv8avA/exec";
+
+    // -------------------------------------------------------------
+    // 1. COUNTDOWN TIMER LOGIC
+    // -------------------------------------------------------------
+    let hours = 1, minutes = 38, seconds = 10;
+    const hEl = document.getElementById('timer-hours');
+    const mEl = document.getElementById('timer-minutes');
+    const sEl = document.getElementById('timer-seconds');
+
+    setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+      } else {
+        seconds = 59;
+        if (minutes > 0) {
+          minutes--;
+        } else {
+          minutes = 59;
+          if (hours > 0) hours--;
+        }
+      }
+      hEl.textContent = String(hours).padStart(2, '0');
+      mEl.textContent = String(minutes).padStart(2, '0');
+      sEl.textContent = String(seconds).padStart(2, '0');
+    }, 1000);
+
+    // -------------------------------------------------------------
+    // 2. MAIN IMAGE GALLERY (1.jpg to 9.jpg)
+    // -------------------------------------------------------------
+    const mainGalleryImages = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg'];
+    let currentMainIndex = 0;
+    const mainImgEl = document.getElementById('main-active-img');
+    const mainThumbsContainer = document.getElementById('main-thumbs-container');
+
+    function renderMainThumbs() {
+      mainThumbsContainer.innerHTML = '';
+      mainGalleryImages.forEach((src, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => setMainImage(idx);
+        btn.className = `relative w-9 h-9 sm:w-11 sm:h-11 shrink-0 rounded-lg overflow-hidden border-2 transition-all bg-[#111] ${
+          currentMainIndex === idx
+            ? 'border-red-600 ring-2 ring-red-400/50 scale-105 shadow-md'
+            : 'border-transparent opacity-60 hover:opacity-100'
+        }`;
+        btn.innerHTML = `<img src="${src}" alt="Thumb ${idx + 1}" class="w-full h-full object-cover" />`;
+        mainThumbsContainer.appendChild(btn);
+      });
+    }
+
+    function setMainImage(idx) {
+      currentMainIndex = idx;
+      mainImgEl.style.opacity = '0.3';
+      setTimeout(() => {
+        mainImgEl.src = mainGalleryImages[currentMainIndex];
+        mainImgEl.style.opacity = '1';
+        renderMainThumbs();
+      }, 150);
+    }
+
+    function nextMainImage() {
+      setMainImage((currentMainIndex + 1) % mainGalleryImages.length);
+    }
+    function prevMainImage() {
+      setMainImage((currentMainIndex - 1 + mainGalleryImages.length) % mainGalleryImages.length);
+    }
+
+    setInterval(nextMainImage, 5000);
+
+    // -------------------------------------------------------------
+    // 3. SECONDARY GALLERY (10.jpg & 11.jpg)
+    // -------------------------------------------------------------
+    const extraGalleryImages = ['10.jpg', '11.jpg'];
+    let currentExtraIndex = 0;
+    const extraImgEl = document.getElementById('extra-active-img');
+    const extraThumbsContainer = document.getElementById('extra-thumbs-container');
+
+    function renderExtraThumbs() {
+      extraThumbsContainer.innerHTML = '';
+      extraGalleryImages.forEach((src, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => setExtraImage(idx);
+        btn.className = `relative w-10 h-10 sm:w-12 sm:h-12 shrink-0 rounded-lg overflow-hidden border-2 transition-all bg-[#111] ${
+          currentExtraIndex === idx
+            ? 'border-red-600 ring-2 ring-red-400/50 scale-105 shadow-md'
+            : 'border-transparent opacity-60 hover:opacity-100'
+        }`;
+        btn.innerHTML = `<img src="${src}" alt="Extra Thumb ${idx + 1}" class="w-full h-full object-cover" />`;
+        extraThumbsContainer.appendChild(btn);
+      });
+    }
+
+    function setExtraImage(idx) {
+      currentExtraIndex = idx;
+      extraImgEl.style.opacity = '0.3';
+      setTimeout(() => {
+        extraImgEl.src = extraGalleryImages[currentExtraIndex];
+        extraImgEl.style.opacity = '1';
+        renderExtraThumbs();
+      }, 150);
+    }
+
+    setInterval(() => {
+      setExtraImage((currentExtraIndex + 1) % extraGalleryImages.length);
+    }, 6000);
+
+    renderMainThumbs();
+    renderExtraThumbs();
+
+    // -------------------------------------------------------------
+    // 4. LIGHTBOX ZOOM MODAL
+    // -------------------------------------------------------------
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightboxModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightboxModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // -------------------------------------------------------------
+    // 5. VIDEO PLAYERS
+    // -------------------------------------------------------------
+    function togglePlayVideo(videoId, overlayId) {
+      const vid = document.getElementById(videoId);
+      const overlay = document.getElementById(overlayId);
+      if (vid.paused) {
+        vid.play();
+        overlay.classList.add('hidden');
+      } else {
+        vid.pause();
+        overlay.classList.remove('hidden');
+      }
+    }
+
+    ['video1', 'video2'].forEach(id => {
+      const vid = document.getElementById(id);
+      const overlay = document.getElementById(id + '-overlay');
+      vid.addEventListener('play', () => overlay.classList.add('hidden'));
+      vid.addEventListener('pause', () => overlay.classList.remove('hidden'));
+      vid.addEventListener('ended', () => overlay.classList.remove('hidden'));
+    });
+
+    // -------------------------------------------------------------
+    // 6. TOGGLE REVIEWS (SHOW 3 REVIEWS BY DEFAULT)
+    // -------------------------------------------------------------
+    let reviewsExpanded = false;
+    function toggleReviews() {
+      reviewsExpanded = !reviewsExpanded;
+      const el = document.getElementById('extra-reviews');
+      const btn = document.getElementById('toggle-reviews-btn');
+      if (reviewsExpanded) {
+        el.classList.remove('hidden');
+        btn.textContent = 'Show Less Reviews / کم ریویوز دیکھیں';
+      } else {
+        el.classList.add('hidden');
+        btn.textContent = 'See More Reviews / مزید ریویوز دیکھیں (10+)';
+        document.getElementById('reviews-section').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 7. LIVE RECENT ORDER NOTIFICATION TOAST
+    // -------------------------------------------------------------
+    const buyers = [
+      { name: 'Bilal Ahmed', city: 'Karachi' },
+      { name: 'Rizwan', city: 'Islamabad' },
+      { name: 'Ahmed Khan', city: 'Lahore' },
+      { name: 'Muneeb', city: 'Faisalabad' },
+      { name: 'Usman Ali', city: 'Rawalpindi' },
+      { name: 'Hamza', city: 'Multan' },
+      { name: 'Tariq Jameel', city: 'Peshawar' },
+      { name: 'Zubair Abbasi', city: 'Sialkot' }
+    ];
+
+    const toastEl = document.getElementById('recent-order-toast');
+    const toastName = document.getElementById('toast-buyer-name');
+    const toastCity = document.getElementById('toast-buyer-city');
+    const toastTime = document.getElementById('toast-buyer-time');
+
+    setInterval(() => {
+      const randomBuyer = buyers[Math.floor(Math.random() * buyers.length)];
+      const randomMins = Math.floor(Math.random() * 4) + 1;
+      toastName.textContent = randomBuyer.name;
+      toastCity.textContent = randomBuyer.city;
+      toastTime.textContent = `${randomMins}m ago`;
+      toastEl.classList.remove('hidden');
+
+      setTimeout(() => {
+        toastEl.classList.add('hidden');
+      }, 4000);
+    }, 8500);
+
+    // -------------------------------------------------------------
+    // 8. CUSTOM PACKAGE DROPDOWN
+    // -------------------------------------------------------------
+    let selectedPackage = '1 Bottle (20 Tablets) - Rs. 2,299';
+    let isDropdownOpen = false;
+
+    function toggleDropdown() {
+      isDropdownOpen = !isDropdownOpen;
+      const menu = document.getElementById('dropdown-menu');
+      const arrow = document.getElementById('dropdown-arrow');
+      if (isDropdownOpen) {
+        menu.classList.remove('hidden');
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        menu.classList.add('hidden');
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function selectPackage(pkg) {
+      selectedPackage = pkg;
+      document.getElementById('selected-package-text').textContent = pkg;
+      toggleDropdown();
+    }
+
+    function selectPackageFromCard(pkg) {
+      selectedPackage = pkg;
+      document.getElementById('selected-package-text').textContent = pkg;
+      const formEl = document.getElementById('order-form');
+      formEl.scrollIntoView({ behavior: 'smooth' });
+
+      const dropdownBtn = document.getElementById('dropdown-toggle');
+      dropdownBtn.classList.add('ring-4', 'ring-red-500');
+      setTimeout(() => {
+        dropdownBtn.classList.remove('ring-4', 'ring-red-500');
+      }, 1200);
+    }
+
+    document.addEventListener('click', (e) => {
+      const toggle = document.getElementById('dropdown-toggle');
+      const menu = document.getElementById('dropdown-menu');
+      if (!toggle.contains(e.target) && !menu.contains(e.target) && isDropdownOpen) {
+        toggleDropdown();
+      }
+    });
+
+    // -------------------------------------------------------------
+    // 9. FORM SUBMIT & CONFIRMATION MODAL LOGIC
+    // -------------------------------------------------------------
+    let pendingOrder = null;
+
+    function handleFormSubmitModal(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('cust-name').value.trim();
+      const phone = document.getElementById('cust-phone').value.trim();
+      const address = document.getElementById('cust-address').value.trim();
+      const city = document.getElementById('cust-city').value.trim();
+
+      if (!name || !phone || !address || !city) {
+        alert('Barah-e-karam tamam fields darust tareeqy se bharein.');
+        return;
+      }
+
+      pendingOrder = {
+        name: name,
+        phone: phone,
+        address: `${address}, ${city}`,
+        city: city,
+        quantity: selectedPackage,
+        price: selectedPackage.includes('4,400') ? 4400.00 : 2299.00
+      };
+
+      // Populate Modal details
+      document.getElementById('modal-name').textContent = pendingOrder.name;
+      document.getElementById('modal-phone').textContent = pendingOrder.phone;
+      document.getElementById('modal-package').textContent = pendingOrder.quantity;
+      document.getElementById('modal-address').textContent = pendingOrder.address;
+
+      // Show Confirmation Modal
+      document.getElementById('confirm-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+
+      // Track InitiateCheckout
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          content_name: pendingOrder.quantity,
+          currency: 'PKR',
+          value: pendingOrder.price
+        });
+      }
+    }
+
+    function closeConfirmModal() {
+      document.getElementById('confirm-modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // -------------------------------------------------------------
+    // 10. FINAL CONFIRM CLICK -> SEND TO GOOGLE SHEETS & REDIRECT
+    // -------------------------------------------------------------
+    async function executeFinalOrderAndRedirect() {
+      if (!pendingOrder) return;
+
+      const confirmBtn = document.getElementById('confirm-submit-btn');
+      confirmBtn.disabled = true;
+      confirmBtn.innerHTML = `
+        <span class="inline-block animate-spin mr-1">⌛</span> محفوظ ہو رہا ہے...
+      `;
+
+      const payload = {
+        name: pendingOrder.name,
+        phone: pendingOrder.phone,
+        address: pendingOrder.address,
+        quantity: pendingOrder.quantity,
+        date: new Date().toLocaleString('en-US', { timeZone: 'Asia/Karachi' })
+      };
+
+      // 1. Send data to Google Apps Script (Simple POST request with text/plain so CORS is bypassed)
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+          },
+          body: JSON.stringify(payload),
+          keepalive: true
+        });
+      } catch (err) {
+        console.warn('Fetch sent to sheets:', err);
+      }
+
+      // 2. Track Lead Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', {
+          content_name: pendingOrder.quantity,
+          currency: 'PKR',
+          value: pendingOrder.price
+        });
+      }
+
+      // 3. Small safe delay of 1 second to ensure Google Sheets receives the data stream, then redirect
+      setTimeout(() => {
+        const redirectUrl = `thank-you.html?name=${encodeURIComponent(pendingOrder.name)}&phone=${encodeURIComponent(pendingOrder.phone)}&val=${pendingOrder.price}&pkg=${encodeURIComponent(pendingOrder.quantity)}&city=${encodeURIComponent(pendingOrder.city)}`;
+        window.location.href = redirectUrl;
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>
