@@ -1384,15 +1384,6 @@
       // Show Confirmation Modal
       document.getElementById('confirm-modal').classList.remove('hidden');
       document.body.style.overflow = 'hidden';
-
-      // Track InitiateCheckout
-      if (typeof fbq === 'function') {
-        fbq('track', 'InitiateCheckout', {
-          content_name: pendingOrder.quantity,
-          currency: 'PKR',
-          value: pendingOrder.price
-        });
-      }
     }
 
     function closeConfirmModal() {
@@ -1435,16 +1426,7 @@
         console.warn('Fetch sent to sheets:', err);
       }
 
-      // 2. Track Lead Event
-      if (typeof fbq === 'function') {
-        fbq('track', 'Lead', {
-          content_name: pendingOrder.quantity,
-          currency: 'PKR',
-          value: pendingOrder.price
-        });
-      }
-
-      // 3. Small safe delay of 1 second to ensure Google Sheets receives the data stream, then redirect
+      // 2. Safe delay of 1 second to ensure Google Sheets receives the data stream, then redirect
       setTimeout(() => {
         const redirectUrl = `thank-you.html?name=${encodeURIComponent(pendingOrder.name)}&phone=${encodeURIComponent(pendingOrder.phone)}&val=${pendingOrder.price}&pkg=${encodeURIComponent(pendingOrder.quantity)}&city=${encodeURIComponent(pendingOrder.city)}`;
         window.location.href = redirectUrl;
